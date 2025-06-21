@@ -1,38 +1,135 @@
+/* App.css
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.App h1 {
+  color: #1976d2;
+  font-size: 2rem;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Make the content box take full height and center its contents */
+.App-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%; /* Adjust the height of content section */
+  width: 100%;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh; /* Maintain full height if needed */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Move content to the top */
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-top: 20px; /* Add some padding for spacing at the top */
+  box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
 }
 
-.App-link {
-  color: #61dafb;
+.App-dashboard {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-dashboard .MuiPaper-root {
+  width: 100%;
+  max-width: 600px; /* Maximum width for Paper component */
+  margin-top: 20px;
+}
+
+.App-footer {
+  margin-top: 20px;
+}
+ 
+
+
+
+
+
+
+/* App.css */
+body {
+    margin: 0; /* Remove any default margin around the body */
+    padding: 0; /* Remove any default padding */
+  
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('wall.jpg');
+  background-color: #070707;
+}
+
+h1 {
+  color: #ffffff; /* Text color of the header */
+  font-family: 'Arial', sans-serif; /* Font family */
+  font-size: 2.5rem; /* Font size */
+  margin: 0; /* Remove default margin */
+  background-color: #3f51b5; /* Background color of the header */
+  padding: 10px 0px; /* Padding around the text */
+  border-radius: 10px; /* Optional: round the corners of the background */
+  position: relative; /* Relative positioning by default */
+  text-align: center; /* Center align the text */
+  width: 100%; /* Stretch the background to the full width of the page */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+
+/* Make the content box take full height and center its contents */
+.App-content {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Adjust the height of content section */
+  width: 100%;
+}
+
+.App-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.App-dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center */
+  align-items: flex-start; /* Align content to the left */
+  min-height: 100vh; /* Ensure the container takes full height of the viewport */
+  width: 300%; /* Ensure the container takes full width */
+  padding-left: 20px; /* Optional: Add some left padding to create space from the left edge */
+}
+
+.App-dashboard .MuiPaper-root {
+  width: 100%;
+  max-width: 600px; /* Maximum width for Paper component */
+  margin-top: 20px;
+}
+
+.App-footer {
+  margin-top: 20px;
 }
