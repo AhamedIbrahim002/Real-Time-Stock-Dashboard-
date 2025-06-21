@@ -45,7 +45,8 @@ const StockDashboard = () => {
   const [intervalId, setIntervalId] = useState(null);
   const [isPaused, setIsPaused] = useState(true);
 
-  const API_KEY = "ctbvvfhr01qvslqvhuo0ctbvvfhr01qvslqvhuog";
+  const API_KEY = "";
+  //replace with your api key
 
   const fetchStockData = async () => {
     if (stockSymbol) {
